@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/usr/lib64
+includedir=${prefix}/include
+
+Name: libloguru
+Description: Lightweight and flexible C++ logging library
+URL: https://emilk.github.io/loguru/
+Version: 2.1.0
+Requires.private:
+Libs: -L${libdir} -lloguru
+Cflags: -I${includedir}
